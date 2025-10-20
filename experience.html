@@ -1,92 +1,30 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Experience — Piyush Kunjilwar</title>
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="/">PK</a>
-      <nav class="nav">
-        <a href="/projects.html">Projects</a>
-        <a href="/experience.html">Experience</a>
-        <a href="/about.html">About</a>
-        <a class="btn" href="/contact.html">Contact</a>
-        <button id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-      </nav>
-    </header>
-
-    <main class="container">
-      <h1 class="page-title">Experience</h1>
-      <p class="sub">Highlights from resume — roles, impact, and technologies.</p>
-
-      <section class="timeline">
-        <div class="timeline-item">
-          <h3>CareerGPT — Applied ML Software Engineer (Deep Research)</h3>
-          <div class="sub">Aug 2025 – Dec 2025</div>
-          <p>Designed and implemented agentic workflows for Gemini models, improving planning, reasoning, and tool use in Deep Research, a product with significant traction. Developed evaluation pipelines and synthetic data systems to improve model reliability and accelerate iteration cycles.</p>
-          <div>
-            <span class="badge">Python</span><span class="badge">LLM</span><span class="badge">Agents</span><span class="badge">Evaluation</span><span class="badge">SFT</span><span class="badge">RLHF</span>
-          </div>
+<section class="experience-section">
+    <div class="container">
+        <h2 class="section-title">Professional Journey</h2>
+        <p class="section-subtitle">My career path across AI, ML, and Software Engineering</p>
+        
+        <div class="experience-categories">
+            <span class="category-tag">🚀 Current</span>
+            <span class="category-tag">🤖 AI Solutions</span>
+            <span class="category-tag">🧠 ML Engineering</span>
         </div>
 
-        <div class="timeline-item">
-          <h3>Accenture — AI Solutions Developer</h3>
-          <div class="sub">Sep 2022 – Aug 2023</div>
-          <p>Built and deployed LLM-powered microservices (Spring Boot, PyTorch, Kubernetes, AWS) at enterprise scale, serving 1M+ users with 99.9% uptime. Architected real-time event-driven ML systems (Kafka + WebSocket) achieving sub-200ms responses, improving user-facing product latency.</p>
-          <div>
-            <span class="badge">PyTorch</span><span class="badge">Kubernetes</span><span class="badge">Kafka</span><span class="badge">AWS</span><span class="badge">Spring Boot</span><span class="badge">WebSocket</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Tata Motors — ML Engineering Intern</h3>
-          <div class="sub">Jan 2022 – Aug 2022</div>
-          <p>Deployed ML microservices on GCP Compute Engine using Docker and Python ML frameworks, reducing model inference latency by 32% for real-time predictive analytics on vehicle telemetry data. Optimized PostgreSQL queries for ML feature extraction on 1TB+ datasets, implementing efficient indexing strategies that reduced query execution time by 50% for predictive maintenance models.</p>
-          <div>
-            <span class="badge">GCP</span><span class="badge">Docker</span><span class="badge">PostgreSQL</span><span class="badge">PySpark</span><span class="badge">AWS EMR</span>
-          </div>
-        </div>
-      </section>
-
-      <h2>Key Projects</h2>
-      <section class="timeline">
-        <div class="timeline-item">
-          <h3>NLP-Powered Dream Interpreter for Sleep Analysis</h3>
-          <div class="sub">Jan 2024 – Mar 2024</div>
-          <p>Engineered a collaborative filtering recommendation model using TensorFlow, containerizing the ML application with Docker and implementing autoscaling via Kubernetes HPA, reducing inference latency by 40%. Optimized PyTorch-based NLP models through ONNX runtime conversion with 8-bit quantization and graph pruning, reducing inference latency from 120ms to 35ms while maintaining 92% accuracy.</p>
-          <div>
-            <span class="badge">TensorFlow</span><span class="badge">PyTorch</span><span class="badge">Docker</span><span class="badge">Kubernetes</span><span class="badge">ONNX</span><span class="badge">NLP</span>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <h3>Weather Prediction System Using Machine Learning</h3>
-          <div class="sub">Oct 2023 – Nov 2023</div>
-          <p>Engineered end-to-end ML pipeline processing 2,712+ weather samples, achieving 91.15% prediction accuracy through advanced LSTM architectures and optimizing hyperparameters for maximum performance. Architected 3 distinct deep learning models (LSTM Shallow, LSTM Deep, Combined Model) using PyTorch, implementing comprehensive data preprocessing and automated visualization system for rapid model evaluation.</p>
-          <div>
-            <span class="badge">PyTorch</span><span class="badge">LSTM</span><span class="badge">Deep Learning</span><span class="badge">Time Series</span><span class="badge">Data Visualization</span>
-          </div>
-        </div>
-      </section>
-
-      <h2>Projects Snapshot</h2>
-      <div id="featured-projects" class="cards"></div>
-    </main>
-
-    <footer class="site-footer">
-      <p>© <span id="year"></span> Piyush Kunjilwar.</p>
-    </footer>
-
-    <script src="/assets/js/github.js" defer></script>
-    <script src="/assets/js/main.js" defer></script>
-    <script>
-      window.__GITHUB_USERNAME__ = "piyush12kunjilwar";
-      window.addEventListener('DOMContentLoaded', () => window.__injectFeaturedRepos && window.__injectFeaturedRepos());
-    </script>
-  </body>
-  </html>
-
-
+        <div class="timeline">
+            <!-- CareerGPT Experience -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-icon">🚀</div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="role-title">Applied ML Software Engineer (Deep Research)</h3>
+                        <span class="company">CareerGPT</span>
+                        <span class="duration">Aug 2025 – Dec 2025</span>
+                        <span class="focus-tag ai-focus">AI Focus</span>
+                    </div>
+                    <p class="role-description">
+                        Designed and implemented agentic workflows for Gemini models, improving planning, reasoning, and tool use in Deep Research, a product with significant traction. Developed evaluation pipelines and synthetic data systems to improve model reliability and accelerate iteration cycles.
+                    </p>
+                    <div class="achievements">
+                        <div class="achievement-item">🎯 Agentic workflows for Gemini models</div>
+                        <div class="achievement-item">🔬 Advanced evaluation pipelines<
