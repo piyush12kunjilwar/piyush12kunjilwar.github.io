@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Piyush Kunjilwar — ML Engineer Portfolio</title>
+    <meta name="description" content="Interactive Portfolio of Piyush Kunjilwar — Machine Learning Engineer | Scalable AI Systems | MLOps & Cloud" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Advanced Animated Background -->
+    <div id="particles-container"></div>
+    <canvas id="bg-canvas"></canvas>
+    <div id="matrix-rain"></div>
+    <div class="gradient-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="nav-brand">
+        <span class="logo">PK</span>
+        <span class="logo-text">Piyush Kunjilwar</span>
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle">🌙</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Home Section -->
+      <section id="home" class="section active">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="greeting typing-text">Hello, I'm</span>
+              <span class="name glitch-text" data-text="Piyush Kunjilwar">Piyush Kunjilwar</span>
+              <span class="title typewriter-text">Machine Learning Engineer</span>
+            </h1>
+            <p class="hero-description reveal-text">
+              Building scalable AI systems with cutting-edge technology. 
+              Passionate about MLOps, cloud infrastructure, and creating 
+              intelligent solutions that make a difference.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn-primary" data-section="projects">Explore My Work</button>
+              <button class="btn-secondary" data-section="contact">Get In Touch</button>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/piyush12kunjilwar" target="_blank" class="social-link">
+                <span class="social-icon">⚡</span> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/piyush-kunjilwar/" target="_blank" class="social-link">
+                <span class="social-icon">💼</span> LinkedIn
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="floating-cards">
+              <div class="floating-card" data-delay="0">
+                <div class="card-icon">🤖</div>
+                <div class="card-text">AI/ML</div>
+              </div>
+              <div class="floating-card" data-delay="1">
+                <div class="card-icon">☁️</div>
+                <div class="card-text">Cloud</div>
+              </div>
+              <div class="floating-card" data-delay="2">
+                <div class="card-icon">⚙️</div>
+                <div class="card-text">MLOps</div>
+              </div>
+              <div class="floating-card" data-delay="3">
+                <div class="card-icon">📊</div>
+                <div class="card-text">Data</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stats-container">
+          <div class="stat-item">
+            <div class="stat-number" data-count="50000">0+</div>
+            <div class="stat-label">Connections</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="99">0</div>
+            <div class="stat-label">% Uptime</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Years Exp</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Interactive showcase of my latest work</p>
+        </div>
+        
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-image">
+              <div class="project-visual">
+                <div class="neural-network">
+                  <div class="node node-1"></div>
+                  <div class="node node-2"></div>
+                  <div class="node node-3"></div>
+                  <div class="node node-4"></div>
+                  <div class="connection conn-1"></div>
+                  <div class="connection conn-2"></div>
+                  <div class="connection conn-3"></div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">Docker</span>
+                  <span class="tech-tag">ONNX</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">NLP Dream Interpreter</h3>
+              <p class="project-description">
+                Advanced NLP system for sleep analysis with 92% accuracy, 
+                featuring collaborative filtering and ONNX optimization.
+              </p>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Architecture:</span>
+                  <span class="detail-value">Transformer-based NLP with collaborative filtering</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Performance:</span>
+                  <span class="detail-value">92% accuracy, 35ms inference latency</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Deployment:</span>
+                  <span class="detail-value">Kubernetes HPA with Docker containers</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Optimization:</span>
+                  <span class="detail-value">ONNX runtime with 8-bit quantization</span>
+                </div>
+              </div>
+              <div class="project-stats">
+                <span class="stat">92% Accuracy</span>
+                <span class="stat">35ms Latency</span>
+                <span class="stat">Kubernetes</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Project</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-visual">
+                <div class="weather-animation">
+                  <div class="cloud cloud-1">☁️</div>
+                  <div class="cloud cloud-2">⛅</div>
+                  <div class="sun">☀️</div>
+                  <div class="rain">🌧️</div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">LSTM</span>
+                  <span class="tech-tag">Time Series</span>
+                  <span class="tech-tag">Data Viz</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Weather Prediction ML</h3>
+              <p class="project-description">
+                Deep learning weather forecasting system with 91.15% accuracy 
+                using advanced LSTM architectures.
+              </p>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Models:</span>
+                  <span class="detail-value">LSTM Shallow, LSTM Deep, Combined Model</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Dataset:</span>
+                  <span class="detail-value">2,712+ weather samples with 15 features</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Accuracy:</span>
+                  <span class="detail-value">91.15% prediction accuracy achieved</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Visualization:</span>
+                  <span class="detail-value">Automated plotting system for model evaluation</span>
+                </div>
+              </div>
+              <div class="project-stats">
+                <span class="stat">91.15% Accuracy</span>
+                <span class="stat">2,712+ Samples</span>
+                <span class="stat">3 Models</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Project</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-visual">
+                <div class="infrastructure">
+                  <div class="server server-1">🖥️</div>
+                  <div class="server server-2">🖥️</div>
+                  <div class="server server-3">🖥️</div>
+                  <div class="network-line line-1"></div>
+                  <div class="network-line line-2"></div>
+                  <div class="network-line line-3"></div>
+                </div>
+              </div>
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span class="tech-tag">AWS</span>
+                  <span class="tech-tag">Kubernetes</span>
+                  <span class="tech-tag">Kafka</span>
+                  <span class="tech-tag">Spring Boot</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Enterprise ML Platform</h3>
+              <p class="project-description">
+                Scalable ML microservices platform serving 1M+ users with 
+                99.9% uptime and sub-200ms response times.
+              </p>
+              <div class="project-details">
+                <div class="detail-item">
+                  <span class="detail-label">Scale:</span>
+                  <span class="detail-value">1M+ users with 99.9% uptime SLA</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Architecture:</span>
+                  <span class="detail-value">Event-driven ML systems with Kafka + WebSocket</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Performance:</span>
+                  <span class="detail-value">Sub-200ms response times achieved</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Tech Stack:</span>
+                  <span class="detail-value">Spring Boot, PyTorch, Kubernetes, AWS</span>
+                </div>
+              </div>
+              <div class="project-stats">
+                <span class="stat">1M+ Users</span>
+                <span class="stat">99.9% Uptime</span>
+                <span class="stat">200ms Response</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Project</a>
+                <a href="#" class="project-link">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="github-integration">
+          <h3>Live GitHub Projects</h3>
+          <div id="github-projects" class="github-grid"></div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Professional Journey</h2>
+          <p class="section-subtitle">My diverse career path across AI, ML, and Software Engineering</p>
+        </div>
+        
+        <div class="experience-container">
+          <!-- Interactive Career Path -->
+          <div class="career-path">
+            <div class="path-line"></div>
+            <div class="path-nodes">
+              <div class="path-node active" data-role="current">
+                <div class="node-pulse"></div>
+                <div class="node-icon">🚀</div>
+                <div class="node-label">Current</div>
+              </div>
+              <div class="path-node" data-role="ai">
+                <div class="node-pulse"></div>
+                <div class="node-icon">🤖</div>
+                <div class="node-label">AI Solutions</div>
+              </div>
+              <div class="path-node" data-role="ml">
+                <div class="node-pulse"></div>
+                <div class="node-icon">🧠</div>
+                <div class="node-label">ML Engineering</div>
+              </div>
+              <div class="path-node" data-role="data">
+                <div class="node-pulse"></div>
+                <div class="node-icon">📊</div>
+                <div class="node-label">Data Science</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Experience Cards -->
+          <div class="experience-cards">
+            <div class="experience-card active" data-role="current">
+              <div class="card-header">
+                <div class="role-badge current">Current Role</div>
+                <div class="timeline-date">Aug 2025 - Present</div>
+              </div>
+              <div class="card-content">
+                <h3 class="role-title">Applied ML Software Engineer & AI Systems Architect</h3>
+                <h4 class="company-name">CareerGPT</h4>
+                <p class="role-description">
+                  Leading the development of next-generation AI systems with agentic workflows. 
+                  Building evaluation pipelines and synthetic data systems for Deep Research product, 
+                  serving millions of users with cutting-edge LLM technology.
+                </p>
+                <div class="achievements">
+                  <div class="achievement-item">
+                    <span class="achievement-icon">🎯</span>
+                    <span class="achievement-text">Agentic workflows for Gemini models</span>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">🔬</span>
+                    <span class="achievement-text">Advanced evaluation pipelines</span>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">⚡</span>
+                    <span class="achievement-text">Synthetic data systems</span>
+                  </div>
+                </div>
+                <div class="tech-stack">
+                  <span class="tech-item">Python</span>
+                  <span class="tech-item">LLM</span>
+                  <span class="tech-item">Agents</span>
+                  <span class="tech-item">Evaluation</span>
+                  <span class="tech-item">Gemini</span>
+                  <span class="tech-item">Deep Research</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="experience-card" data-role="ai">
+              <div class="card-header">
+                <div class="role-badge ai">AI Focus</div>
+                <div class="timeline-date">Sep 2022 - Aug 2023</div>
+              </div>
+              <div class="card-content">
+                <h3 class="role-title">AI Solutions Developer & Enterprise Architect</h3>
+                <h4 class="company-name">Accenture</h4>
+                <p class="role-description">
+                  Built LLM-powered microservices at enterprise scale, architected 
+                  real-time event-driven ML systems with Kafka and WebSocket. 
+                  Led AI transformation initiatives for Fortune 500 clients.
+                </p>
+                <div class="achievements">
+                  <div class="achievement-item">
+                    <span class="achievement-icon">🏢</span>
+                    <span class="achievement-text">Enterprise-scale LLM systems</span>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">🔄</span>
+                    <span class="achievement-text">Real-time event-driven architecture</span>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">🚀</span>
+                    <span class="achievement-text">Fortune 500 AI transformation</span>
+                  </div>
+                </div>
+                <div class="tech-stack">
+                  <span class="tech-item">PyTorch</span>
+                  <span class="tech-item">Kubernetes</span>
+                  <span class="tech-item">AWS</span>
+                  <span class="tech-item">Kafka</span>
+                  <span class="tech-item">WebSocket</span>
+                  <span class="tech-item">Microservices</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="experience-card" data-role="ml">
+              <div class="card-header">
+                <div class="role-badge ml">ML Focus</div>
+                <div class="timeline-date">Jan 2022 - Aug 2022</div>
+              </div>
+              <div class="card-content">
+                <h3 class="role-title">ML Engineering Intern & Data Pipeline Specialist</h3>
+                <h4 class="company-name">Tata Motors</h4>
+                <p class="role-description">
+                  Deployed ML microservices on GCP, reduced inference latency by 32%, 
+                  optimized PostgreSQL queries for 1TB+ datasets. Built automated 
+                  ML pipelines for automotive data processing.
+                </p>
+                <div class="achievements">
+                  <div class="achievement-item">
+                    <span class="achievement-icon">⚡</span>
+                    <span class="achievement-text">32% latency reduction achieved</span>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">📊</span>
+                    <span class="achievement-text">1TB+ dataset optimization</span>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">🏭</span>
+                    <span class="achievement-text">Automotive ML pipelines</span>
+                  </div>
+                </div>
+                <div class="tech-stack">
+                  <span class="tech-item">GCP</span>
+                  <span class="tech-item">Docker</span>
+                  <span class="tech-item">PostgreSQL</span>
+                  <span class="tech-item">PySpark</span>
+                  <span class="tech-item">MLOps</span>
+                  <span class="tech-item">Python</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="experience-card" data-role="data">
+              <div class="card-header">
+                <div class="role-badge data">Data Focus</div>
+                <div class="timeline-date">2021 - 2022</div>
+              </div>
+              <div class="card-content">
+                <h3 class="role-title">Data Scientist & Analytics Engineer</h3>
+                <h4 class="company-name">DataFlow Inc</h4>
+                <p class="role-description">
+                  Built predictive analytics models and designed data pipelines processing 
+                  terabytes of data daily. Created interactive dashboards and automated 
+                  reporting systems for business intelligence.
+                </p>
+                <div class="achievements">
+                  <div class="achievement-item">
+                    <span class="achievement-icon">📊</span>
+                    <span class="achievement-text">TB-scale data processing</span>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">📈</span>
+                    <span class="achievement-text">Predictive analytics models</span>
+                  </div>
+                  <div class="achievement-item">
+                    <span class="achievement-icon">📋</span>
+                    <span class="achievement-text">Automated reporting systems</span>
+                  </div>
+                </div>
+                <div class="tech-stack">
+                  <span class="tech-item">Python</span>
+                  <span class="tech-item">Pandas</span>
+                  <span class="tech-item">SQL</span>
+                  <span class="tech-item">Tableau</span>
+                  <span class="tech-item">Apache Spark</span>
+                  <span class="tech-item">Jupyter</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Passionate about AI and building the future</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a Machine Learning Engineer with a passion for building scalable AI systems 
+              that solve real-world problems. With experience in MLOps, cloud infrastructure, 
+              and full-stack ML development, I love turning complex data into intelligent solutions.
+            </p>
+            <p>
+              Currently pursuing my Master's in Information Systems at Northeastern University, 
+              I'm always exploring the latest in AI research and applying cutting-edge techniques 
+              to create impactful products.
+            </p>
+          </div>
+          
+          <div class="skills-container">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Programming</h4>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="95%"></div>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span class="skill-name">C++</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span class="skill-name">TypeScript</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>ML/AI</h4>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <span class="skill-name">PyTorch</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="92%"></div>
+                    </div>
+                    <span class="skill-percentage">92%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span class="skill-name">TensorFlow</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="88%"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span class="skill-name">Hugging Face</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span class="skill-name">LangChain</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Cloud & DevOps</h4>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <span class="skill-name">AWS</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span class="skill-name">GCP</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span class="skill-name">Docker</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="88%"></div>
+                    </div>
+                    <span class="skill-percentage">88%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <span class="skill-name">Kubernetes</span>
+                    <div class="skill-progress">
+                      <div class="skill-fill" data-width="82%"></span>
+                    </div>
+                    <span class="skill-percentage">82%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">Ready to build something amazing together?</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>kunjilwar.p@northeastern.edu</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Boston, Massachusetts</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🎓</div>
+              <div class="contact-details">
+                <h4>Education</h4>
+                <p>MS Information Systems, Northeastern University</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-actions">
+            <a href="mailto:kunjilwar.p@northeastern.edu" class="contact-btn primary">
+              Send Email
+            </a>
+            <a href="https://www.linkedin.com/in/piyush-kunjilwar/" target="_blank" class="contact-btn secondary">
+              LinkedIn
+            </a>
+            <a href="https://github.com/piyush12kunjilwar" target="_blank" class="contact-btn secondary">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Code Terminal Section -->
+      <section id="terminal" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Live Code Terminal</h2>
+          <p class="section-subtitle">Interactive coding experience</p>
+        </div>
+        
+        <div class="terminal-container">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="btn-close"></span>
+              <span class="btn-minimize"></span>
+              <span class="btn-maximize"></span>
+            </div>
+            <div class="terminal-title">piyush@portfolio:~$</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="prompt">piyush@portfolio:~$</span>
+              <span class="command typing-command">whoami</span>
+            </div>
+            <div class="terminal-output">Machine Learning Engineer | AI Systems Architect</div>
+            
+            <div class="terminal-line">
+              <span class="prompt">piyush@portfolio:~$</span>
+              <span class="command typing-command">ls -la skills/</span>
+            </div>
+            <div class="terminal-output">
+              <div class="file-list">
+                <div class="file-item">drwxr-xr-x  python/</div>
+                <div class="file-item">drwxr-xr-x  pytorch/</div>
+                <div class="file-item">drwxr-xr-x  aws/</div>
+                <div class="file-item">drwxr-xr-x  kubernetes/</div>
+              </div>
+            </div>
+            
+            <div class="terminal-line">
+              <span class="prompt">piyush@portfolio:~$</span>
+              <span class="command typing-command">cat experience.json</span>
+            </div>
+            <div class="terminal-output">
+              <pre class="json-code">{
+  "current_role": "Applied ML Engineer",
+  "company": "CareerGPT",
+  "experience": "3+ years",
+  "specialties": ["LLM", "MLOps", "Cloud Architecture"],
+  "achievements": ["99.9% uptime", "1M+ users served"]
+}</pre>
+            </div>
+            
+            <div class="terminal-line">
+              <span class="prompt">piyush@portfolio:~$</span>
+              <span class="command cursor-blink">_</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+      <button class="fab fab-main" id="fabMain">
+        <span class="fab-icon">⚡</span>
+      </button>
+      <div class="fab-menu">
+        <button class="fab fab-item" data-section="projects" title="Projects">
+          <span class="fab-icon">🚀</span>
+        </button>
+        <button class="fab fab-item" data-section="experience" title="Experience">
+          <span class="fab-icon">💼</span>
+        </button>
+        <button class="fab fab-item" data-section="about" title="About">
+          <span class="fab-icon">👨‍💻</span>
+        </button>
+        <button class="fab fab-item" data-section="contact" title="Contact">
+          <span class="fab-icon">📧</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+      <div class="cursor-dot"></div>
+      <div class="cursor-outline"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      window.__GITHUB_USERNAME__ = "piyush12kunjilwar";
+    </script>
+  </body>
+</html>
+
+
