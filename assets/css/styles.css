@@ -1898,5 +1898,40 @@ body {
     max-width: 300px;
   }
 }
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.timeline-item {
+  background: #222;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 2px 32px rgba(0,0,0,0.1);
+  position: relative;
+}
+.timeline-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.tech-tag, .focus-tag {
+  display: inline-block;
+  background: #222;
+  color: #fff;
+  border-radius: 1em;
+  padding: 0.25em 0.75em;
+  margin-right: 0.5em;
+  font-size: 0.9em;
+}
+.achievement-item {
+  margin-bottom: 0.2em;
+  font-size: 1.07em;
+}
+.timeline-icon {
+  font-size: 2em;
+  margin-right: 1em;
+}
 
 
