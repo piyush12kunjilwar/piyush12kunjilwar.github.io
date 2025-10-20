@@ -1933,5 +1933,60 @@ body {
   font-size: 2em;
   margin-right: 1em;
 }
+/* Responsive Timeline and Cards */
+@media (max-width: 900px) {
+  .timeline {
+    max-width: 98vw;
+    padding: 0 4vw;
+  }
+  .timeline-item {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 1rem !important;
+    margin-bottom: 2rem;
+    text-align: left !important;
+  }
+  .timeline-marker {
+    left: 10px !important;
+    right: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    gap: 1.2rem;
+    padding: 0 1vw;
+  }
+  .timeline-item {
+    padding: 0.8rem !important;
+    font-size: 0.95em;
+    margin-bottom: 1.2rem;
+  }
+  .timeline-header {
+    flex-direction: column;
+    gap: 0.7rem;
+    text-align: left;
+  }
+  .role-title, .company, .duration {
+    margin-right: 0;
+    font-size: 1.15em;
+  }
+  .tech-tag, .focus-tag {
+    font-size: 0.82em;
+    margin-bottom: 0.2em;
+  }
+  .timeline-icon {
+    font-size: 1.25em;
+    margin-right: 0.2em;
+  }
+}
+
+@media (max-width: 400px) {
+  .timeline-item {
+    padding: 0.5rem !important;
+    font-size: 0.90em;
+  }
+}
 
 
